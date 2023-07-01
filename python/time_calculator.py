@@ -82,6 +82,4 @@ def add_time(start_time, duration, starting_day='None') :
 		print(new_time)
 		return(new_time)
 		
-		
-
-add_time("11:43 PM", "24:20", "tueSday")
+add_time("01:00 AM", "12:33", "Monday")
