@@ -35,3 +35,25 @@ body {
     margin: 5%;
     padding-top: 5%;
 }
+
+.formFields {
+    margin: 6px
+}
+
+.form-label {
+    text-align: center;
+}
+
+#submit {
+    margin-top: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.alert {
+    width: 50vw;
+    margin-left: 25%;
+    text-align: center;
+}

@@ -1,5 +1,5 @@
+import sys
 def add_time(start_time, duration, starting_day='None') :
-    
 		#start time
 		s = start_time.split(":")	
 		start_hour = int(s[0])
@@ -80,6 +80,8 @@ def add_time(start_time, duration, starting_day='None') :
 				elif multiple_days:
 						new_time += f' ({end_day} days later)'
 		print(new_time)
+		sys.stdout.flush(new_time)
 		return(new_time)
 		
-add_time("01:00 AM", "12:33", "Monday")
+
+add_time(sys.argv[1], sys.argv[2], sys.argv[3])
