@@ -8,7 +8,7 @@ const express = require('express'),
   app = express(),
   port = process.env.PORT || 8080;
 
-app.use(express.static('./src'));
+app.use(express.static('./src/'));
 // parse application/json
 app.use(bodyParser.json());
 // parse application/x-www-form-urlencoded
