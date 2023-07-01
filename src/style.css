@@ -51,3 +51,9 @@ body {
 .hide {
     display: none;
 }
+
+.alert {
+    width: 50vw;
+    margin-left: 25%;
+    text-align: center;
+}
