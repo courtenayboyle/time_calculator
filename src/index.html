@@ -17,14 +17,17 @@
             <h1>THIS</h1>
         </div>
         <div class="title">
-            <h2>Is a Time Machine...</h2>
+            <h1>Is a Time Machine...</h1>
             <p class="title-sm">(Calculator...)</p>
         </div>
     </div>
     <div class="main">
         <div class="formContainer">
             <div class="formFrame">
-                <label class="form-label">Beginning Time</label>
+                <div class="row">
+                    <h5>Below, you can enter a time, followed by a duration and the day of the week, and our advanced AI will tell you what time and day of the week it will be after that duration!</h5>
+                </div>
+                <label class="form-label"><i>Beginning Time</i></label>
                 <div class="row formFields">
                     <select class="col-4" id="startHrs">
                         <option selected>1</option>
@@ -107,15 +110,14 @@
                         <option>PM</option>
                     </select>
                 </div>
-                <label class="form-label text-center">Duration</label>
-                <div class="input-group row">
-                    <!-- <span class="input-group-text col-4">Duration hh:mm</span> -->
+                <label class="form-label text-center"><i>Duration</i></label>
+                <div class="formFields row">
                     <input id="durationHrs" type="number" aria-label="Hours" class="col-3">
                     <div class="col-1">:</div>
                     <input id="durationMins" type="number" aria-label="Minutes" class="col-3">
                 </div>
                 <div class="col-4"></div>
-                <label class="form-label text-center">Day of the Week</label>
+                <label class="form-label text-center"><i>Day of the Week</i></label>
                 <div class="row">
                     <select class="col-4 formFields" id="dayInput">
                         <option selected>Monday</option>
@@ -133,8 +135,7 @@
                 </div>
             </div>
         </div>
-        <div id="alert" class="alert alert-warning alert-dismissible fade show hide" role="alert">
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div id="alert" class="alert alert-success alert-dismissible fade show hide" role="alert">
           </div>
     </div>
     <script src="./scripts.js"></script>

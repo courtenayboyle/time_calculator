@@ -27,6 +27,6 @@ submitBtn.addEventListener('click', async function () {
     
     let returnData = await postData();
     console.log("Response = " + returnData);
-    alert.innerText = returnData;
+    alert.innerText = "The time will be " + returnData;
     alert.classList.remove('hide');
 });
